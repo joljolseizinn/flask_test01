@@ -1,0 +1,43 @@
+li{
+    list-style-type: none;
+  }
+li::before {
+    position: relative;
+    top: -2px;
+    left: -7px;
+   
+    display: inline-block;
+   
+    width: 12px;
+    height: 12px;
+
+    content: '';
+   
+    border-radius: 100%;
+    background: rgb(48, 51, 51);
+  }
+  ui{
+    font-size: 20px;
+  }
+
+h1{
+    color: rgb(255, 15, 10);
+}
+h2{
+    color: rgb(0, 255, 149);
+}
+.utyuu{
+  color:black;
+}
+h3{
+    color: rgb(24, 41, 19);
+}
+
+table{
+    width:100%;
+}
+th{
+    width:200;
+    text-align:left;
+}
+

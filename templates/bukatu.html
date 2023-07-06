@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+    {% block title %}コンピュータ部{% endblock %}
+{% block body %}
+    <body>
+        <ui>
+        <li><a href="{{ url_for('game') }}">ゲーム</a></li>
+        <li><a href="{{ url_for('hobby') }}">趣味</a></li>
+        </ui>
+        <h1>部活動についてです</h1>
+        <p>
+            コンピュータ部でゲーム制作をしています。<br>
+            1年の時はコロナで部活動自体が活動停止していたので、参加したのは2年からですが<br>
+            結構プログラムで行き詰ったりして時間を溶かしました。<br>
+        </p>
+        <br><br><br>
+        <h3>今作っている迷路です。</h3>
+        <table>
+            <div>
+            <th><img src="{{ url_for('static', filename='images/kikaku_title.png') }}"width="450"> </th>
+            <th>
+                <img src="{{ url_for('static', filename='images/kikaku_game02.png') }}"width="450">               
+            </th>
+            </div>
+        </table>       
+    </body>   
+    {% endblock %}

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}j20240の趣味{% endblock %}
+{% block body %}
+    <body>
+        <ui>
+        <li><a href="{{ url_for('game') }}">ゲーム</a></li>
+        <li><a href="{{ url_for('bukatu') }}">部活</a></li>
+        </ui>
+        <h1>趣味を紹介するページです</h1>
+        
+        <h3>
+        昔から宇宙が好きで、趣味でたまに勉強しています。
+        </h3>  
+        最初に興味を持ったのは小4くらいの時で、<br>
+       「ブラックホールってなんだろう」と思ってその場で調べたのがきっかけです。<br>
+        本やネットで調べたり、たまに放送大学を観たりしてます。<br><br><br><br>
+
+        <h2>オススメの本をいくつか紹介します。</h2>
+            <table>
+                <div>
+                <h3>ホーキング、宇宙を語る</h3>
+                <th><img src="{{ url_for('static', filename='images/Hawking.jpg') }}"width="250"> </th>
+                <td>かなり古い本ですが、宇宙好きには必読の一冊です。<br>
+                    一般書の中では少し小難しい話が多いですが、数式はほとんど使われていません。                
+                </td>
+                </div>
+            </table>
+            <br><br>
+            <table>
+                <div>
+                <h3>核融合エネルギーのきほん</h3>
+                <th><img src="{{ url_for('static', filename='images/kakuyugo.jpg') }}"width="250"> </th>
+                <td>とても分かりやすく、核融合の基本的な知識は書かれています。<br>
+                    核融合炉のいくつかの方式が書かれているので、核融合炉を知りたければ最初に読んでみるのもアリかと。                
+                </td>
+                </div>
+            </table>
+            <br><br>
+            <table>
+                <div>
+                <h3>探査機・観測機器61</h3>
+                <th><img src="{{ url_for('static', filename='images/tansaki.jpg') }}"width="250"> </th>
+                <td>主要な探査機と観測機器がいくつか載っています。<br>
+                    各探査機が搭載している観測装置も載っています。<br>
+                    ラグランジュ点の説明とかもちらっとあるので、その辺の勉強にもなります。             
+                </td>
+                </div>
+            </table>
+            <br><br>
+            <table>
+                <div>
+                <h3>Newton</h3>
+                <th><img src="{{ url_for('static', filename='images/Newton_202205.jpg') }}"width="250"> </th>
+                <td>図解で分かりやすい科学雑誌です。<br>
+                    科学全般を扱ってるので生物や数学もありますが<br>
+                    相対性理論や量子論も図解で分かりやすく解説されていて、<br>
+                    宇宙を題材にした回もあるので物理や宇宙系を中心に読んでいます。            
+                </td>
+                </div>
+            </table>
+    </body>   
+    {% endblock %}

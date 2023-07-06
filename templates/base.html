@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang='ja'>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %} | ジョルジョル星人のホームページ</title>
+        <!-- url_for関数を使ってcssを読み込む -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+
+    <body>
+        <!-- url_for関数を使ってjsを読み込む -->
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+        <ui>
+            <li><a href="{{ url_for('index') }}">トップ</a></li>
+        </ui>
+        {% block body %}{% endblock %}
+        <footer><p>j20240hs@edu.tuis.ac.jp</p></footer>
+    </body>
+</html>

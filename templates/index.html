@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{# titleブロックを拡張 #}
+{% block title %}トップ{% endblock %}
+{% block body %}
+<h1>トップページ</h1>
+<p>このサイトは、私が大学時代一番時間を溶かした「***」について紹介しています。</p>
+<body>
+    <h1>時間を溶かしたやつ</h1>
+    <ui>
+        <li><a href="{{ url_for('game') }}">ゲーム</a></li>
+        <li><a href="{{ url_for('hobby') }}">趣味</a></li>
+        <li><a href="{{ url_for('bukatu') }}">部活</a></li>
+    </ui>
+</body> 
+{% endblock %}

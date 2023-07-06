@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}J20240のゲーム{% endblock %}
+{% block body %}
+
+<body>
+    <ui>
+        <li><a href="{{ url_for('hobby') }}">趣味</a></li>
+        <li><a href="{{ url_for('bukatu') }}">部活</a></li>
+    </ui>
+    <br>
+        <h1>よくプレイしたゲームです</h1>
+        <br>
+        <table>
+            <div>
+            <h2>プリコネR</h2>
+            <th><img src="{{ url_for('static', filename='images/priconne.jpg') }}"width="250"> <!-- staticフォルダ内のpriconne.jpgを表示する --></th>
+            <td>
+                プリンセスコネクト!Re:Diveです。<br>
+                前作のプリコネがサ終になってからRe:Diveになって再リリースし、人気になりました。<br>
+                推しを愛でるエンジョイ勢は平和ですが、クランバトルガチ勢などはギスギスしています。
+            </td>
+            </div>
+        </table>
+        <br><br>
+
+        <table>
+            <div>
+            <h2>グレムリン</h2>
+            <th><img src="{{ url_for('static', filename='images/gremlins_inc.jpg') }}"width="250"> </th>
+            <td>マリオパーティーのミニゲームを無くして戦略性を上げた感じのボードゲームです。<br>
+                最大で1マッチ8時間近くかかった闇のゲームです。
+            </td>
+            </div>
+        </table>
+        <br><br>
+
+        <table>
+            <div>
+            <h2>隻狼</h2>
+            <th><img src="{{ url_for('static', filename='images/sekiro.jpg') }}"width="250"> </th>
+            <td>某死にゲーです。セールで安くなってたので買いました。</td>
+            </div>
+        </table>
+    
+</body>   
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block body %}
+<form action="/send_text" method="POST">
+    <input name="text_data" type="text">
+    <input type="submit" value="送信">
+</form>
+{% endblock %}
